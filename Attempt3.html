@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Third One</title>
+        <style>
+            .container{display:grid;
+                       grid-template-columns:200px 200px 200px;
+                       grid-template-rows:200px 200px 200px;
+                       border:2px solid;
+                       width:604px;
+                       height:402px;
+                       grid-gap:2px;
+                       margin:0 auto;}
+            .header{background-color:crimson;
+                    padding:50px;
+                    border:2px solid;}
+            .content{background-color:coral;
+                     padding:50px;
+                     border:2px solid;}
+            .footer{background-color:white;
+                    padding:50px;
+                    border:2px solid;}
+            .row1{background-color:aqua;
+                 padding:50px;
+                 border:2px solid;}
+            .row2{background-color:brown;
+                 padding:50px;
+                 border:2px solid;}
+            .row3{background-color:aquamarine;
+                 padding:50px;
+                 border:2px solid;}
+            .h1{background-color:crimson;
+                padding:2px;}
+            .body{background-color:burlywood;
+                  font-family:Georgia,serif;
+                  font-weight:normal;
+                  font-style:normal;}
+            .p{background-color:plum;
+                text-align:center;}
+            .p1{background-color:red;
+               text-align:center;}
+            .p2{background-color:chartreuse;
+               text-align:center;}
+            .p3{background-color:cyan;
+               text-align:center;}
+            .p4{background-color:fuchsia;
+               text-align:center;}
+            .p5{background-color:orange;
+               text-align:center;}
+            .p6{background-color:orangered;
+               text-align:center;}
+            .p7{background-color:purple;
+                font-size:16px;
+                text-align:center;}
+            .line1{border:none;
+                   border-top:2px solid;
+                   border-top-color:black;}
+            .line2{border:none;
+                   border-top:2px dashed;
+                   border-top-color:black;}
+            .line3{border:none;
+                   border-top:2px dotted;
+                   border-top-color:black;}
+        </style>
+    </head>
+    <body class="body">
+        <h1 class="h1">Welcome back again!</h1>
+        <p><strong style="background-color:yellow;">Name:</strong>Muhammad Shalan</p>
+        <p><strong style="background-color:yellow;">Class:</strong>Grade 9</p>
+        <p><strong style="background-color:yellow;">Section:</strong>Phase 1</p>
+        <p style="background-color:coral;">Today we're going to learn how to make grids using CSS.<br>
+        Just follow these points:</p>
+
+        <p class="p"><strong>-:Steps to make grids,tables and rows:-</strong></p>
+        <p class="p1"><strong>(I)</strong><br>
+        We create a container first with class(.container) then assign it to div class.For neatness,we create grid gaps,which creates the spaces between columns and rows.</p>
+        <p class="p2"><strong>(II)</strong><br>
+        Then we create the classes for sections too,if we want,we can make their borders too,</p>
+        <p class="p3"><strong>(III)</strong><br>
+        The command (grid-template-columns) creates the columns and decides their widths,like auto auto auto; ot 200px 50px 100px; . </p>
+        <p class="p4"><strong>(IV)</strong><br>
+        The command (grid-template-rows) decides how tall the columns/cells are in a particular row,e.g. auto auto auto; or 200px(first cell) 50px(second cell) and so on.</p>
+        <p class="p5"><strong>(V)</strong><br>
+        To create more elegancy,once you write a text in section tag,you can create paddings too,i'd recommend padding around 50px.</p>
+        <p class="p6"><strong>(VI)</strong><br>
+        This is an important concern.Imagine you want to create 9 cells each 3 starting on new row.How CSS automatically knows when to use second row?<br>
+        We know we wrote 200px 50px 100px; earlier,when the columns with these heights and widths fill up the first row of container,they automatically switrch to the other one to fill it.Until all your demanded columns are created.</p>
+        <p class="p7"><strong>-:Example:-</strong></p>
+
+        <div class="container">
+            <section class="header">This is a Header.</section>
+            <section class="content">This is main Content.</section>
+            <section class="footer">This is Bottom.</section>
+            <section class="row1">This is first row.</section>
+            <section class="row2">This is second row.</section>
+            <section class="row3">This is third row.</section>
+        </div>
+        <hr class="line1">
+        <hr class="line2">
+        <hr class="line3">
+        <p style="text-align:center;"><a href="Attempt1.html">Click Me if you want to go back again.</a></p>
+    </body>
+</html>
